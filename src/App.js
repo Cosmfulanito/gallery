@@ -202,9 +202,8 @@ function App() {
 		<div className="App">	
 			<Router>
 				<header className='header'>
-					perro	
 					<div className='top-header'>
-						<Link to="/gallery/">
+						<Link to="/gallery">
 							<img src='./assets/shared/logo.svg' alt='title' className='title'></img>
 						</Link>
 						<Link to={`/${subdirectory(paintings[0].name)}`} className='slideshow'>START SLIDESHOW</Link>			{/* Este boton me redirige al link de la primera imagen */}
@@ -212,7 +211,7 @@ function App() {
 					<div className='bar'></div>
 				</header>
 				<main>
-					<Route exact path="gallery/" render={() => {									
+					<Route exact path="/gallery" render={() => {									
 						return(
 							<div className='gallery'>							
 								{renderDispositive()}
