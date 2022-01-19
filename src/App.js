@@ -203,15 +203,15 @@ function App() {
 			<Router>
 				<header className='header'>
 					<div className='top-header'>
-						<Link to="/gallery">
+						<Link to="/gallery/">
 							<img src='./assets/shared/logo.svg' alt='title' className='title'></img>
 						</Link>
-						<Link to={`/${subdirectory(paintings[0].name)}`} className='slideshow'>START SLIDESHOW</Link>			{/* Este boton me redirige al link de la primera imagen */}
+						<Link to={`/gallery/${subdirectory(paintings[0].name)}`} className='slideshow'>START SLIDESHOW</Link>			{/* Este boton me redirige al link de la primera imagen */}
 					</div>
 					<div className='bar'></div>
 				</header>
 				<main>
-					<Route exact path="/gallery" render={() => {									
+					<Route exact path="/gallery/" render={() => {									
 						return(
 							<div className='gallery'>							
 								{renderDispositive()}
