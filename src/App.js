@@ -211,7 +211,7 @@ function App() {
 					<div className='bar'></div>
 				</header>
 				<main>
-					<Route exact path="/" render={() => {									
+					<Route exact path="gallery/" render={() => {									
 						return(
 							<div className='gallery'>							
 								{renderDispositive()}
@@ -219,7 +219,7 @@ function App() {
 						)}}>										
 					</Route>
 					{paintings.map(painting => 
-						<Route path={`/${subdirectory(painting.name)}`} key={painting.name}  render={() => {						// Este key es pára que no me tire errores 						
+						<Route path={`gallery/${subdirectory(painting.name)}`} key={painting.name}  render={() => {						// Este key es pára que no me tire errores 						
 							return (
 								<div>
 									<PaintingPage paintings={paintings} painting={painting} subdirectory={subdirectory}/>
