@@ -222,6 +222,7 @@ function App() {
 						<Route path={`/gallery/${subdirectory(painting.name)}`} key={painting.name}  render={() => {						// Este key es pára que no me tire errores 						
 							return (
 								<div>
+									<img src={`./assets/images/mona-lisa/gallery.jpg`} alt={`perro`}></img>
 									<PaintingPage paintings={paintings} painting={painting} subdirectory={subdirectory}/>
 								</div>
 							)}}>
