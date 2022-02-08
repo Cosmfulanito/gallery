@@ -197,11 +197,12 @@ function App() {
 			)
 		}
 	}
-
+	
 	return (
 		<div className="App">	
 			<Router>
 				<header className='header'>
+					<img src={`./assets/images/mona-lisa/gallery.jpg`} alt={`perro`}></img>
 					<div className='top-header'>
 						<Link to="/gallery">
 							<img src='./assets/shared/logo.svg' alt='title' className='title'></img>
